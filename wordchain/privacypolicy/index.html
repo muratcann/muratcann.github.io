@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use</title>
+</head>
+<body>
+
+<h2># Privacy Policy</h1>
+
+Effective date: 19 November 2026  <br>
+Last updated: 19 November 2026
+<br><br>
+This policy explains how the mobile application that presents this text handles personal data. The App is a single-player word-chain puzzle. It can be played in Turkish and English. It does not ask you to create an account. It does not show ads, and it does not track you across apps or websites.
+<br><br>
+This text is written for Apple App Store Review Guideline 5.1.1, the Turkish Personal Data Protection Law No. 6698 (“KVKK”), and the transparency duties that come with the third-party services the App uses.
+<br><br>
+## 1. Data controller
+<br>
+Data controller: Murat Can<br>
+Email: muratcanappsupport@gmail.com
+<br><br>
+This text applies to the mobile application that presents it. Send KVKK and other privacy requests to the email address above.
+<br><br>
+## 2. Data we do not collect
+
+The App does not collect or ask for:
+<br><br>
+- An account based on your name, email address, phone number, or password<br>
+- Payment card numbers, bank accounts, or billing addresses. Apple processes the payment<br>
+- Location<br>
+- Contacts, photos, microphone recordings, or camera images<br>
+- An advertising identifier (IDFA) or cross-app tracking data<br>
+- Chat, a friend list, or a public profile that you write<br>
+
+The App does not request App Tracking Transparency permission. Tracking is off in the privacy manifest.
+<br><br>
+## 3. Data that stays on your device
+<br>
+Game progress is not written to our server. The following stays in local storage on your device:
+<br><br>
+- Completed and unlocked levels, best score, stars, and attempt counts<br>
+- All-time, weekly, and monthly score totals<br>
+- Coins, hints, experience, rank, streak, daily quests, chests, achievements, and cosmetic choices<br>
+- The daily-chain result and the rush-mode best score<br>
+- App language, game language, sound, haptics, and the notification preference<br>
+- Whether onboarding has been seen<br>
+- A random install identifier generated for analytics, and the first-open date<br>
+- A cache of level lists and version-check settings downloaded earlier<br>
+- Transaction identifiers stored so the same purchase does not grant coins twice on that install<br><br>
+
+Deleting the App deletes this local data. Restoring a device backup may bring it back. Coins are a consumable virtual item. Deleting the App deletes the local balance, and Apple’s restore-purchases flow does not return spent coins.
+<br><br>
+## 4. Data we process, why, and the legal basis
+<br><br>
+| Data | Source | Purpose | Legal basis |<br>
+|---|---|---|---|<br>
+| Gameplay events: level start and complete, word solved, abandon, stuck, hint and coin changes, chest, quest, streak, achievement, screen name, tutorial step, setting change, language | Firebase Analytics | Understand and balance how the game is played | Legitimate interest |<br>
+| Install identifier (a random UUID created on the device) and days since install | Firebase Analytics user ID | Group events for one install. It is not your name, email, or Apple ID | Legitimate interest |<br>
+| Summary user properties: game and app language, rank band, completed-level band, star, hint, and coin bands, streak band, whether Game Center is connected, whether notifications are on, whether onboarding is done | Firebase Analytics | Understand the audience. Bands are sent instead of exact balances | Legitimate interest |<br>
+| Crash and caught-error reports. Context: current level number, game language, app language, hint count, total score, app version, error category, and technical error code | Firebase Crashlytics | Find and fix failures | Legitimate interest |<br>
+| Diagnostics added by Crashlytics: device model, operating-system version, app version, crash trace | Firebase Crashlytics | Read the cause of a crash | Legitimate interest |<br>
+| Level list and the required-update setting (version and App Store address) | Cloud Firestore, read only | Run the game and the update gate. Your data is not written | Performance of the service |<br>
+| Game Center display name, player identifier, and leaderboard score | Apple Game Center | Optional rankings. The score is the all-time, weekly, or monthly total | Contract and Apple’s terms. Sign-in is your choice |<br>
+| Game Center player identifier, anonymous RevenueCat identifier, product identifier, price, currency, and purchase or restore result | RevenueCat and Apple StoreKit | Deliver the coin pack and prevent a second grant of the same transaction | Performance of the contract |<br>
+| Whether notification permission was granted (yes or no) | Firebase Analytics | Measure the permission result. Notification text is not sent to a server | Legitimate interest. The notification itself depends on the iOS permission |<br>
+| Daily-chain share text | Only the share target you choose | Share a result. The App does not upload this text to its own server | Your own action |<br><br>
+
+Event parameters can include gameplay detail such as level number, score, stars, combo, duration, wrong-letter count, hint use, and coin balance. Puzzle answers, your name, your email, and your Game Center display name are not written into Analytics events. Error reports drop any field whose name contains password, token, email, display name, player id, or user id.
+<br>
+This data is not kept in order to identify you. The privacy manifest marks product interaction and other usage data as not linked to identity and not used for tracking. The exception is that, after you sign in to Game Center, RevenueCat can attach the purchase record to Apple’s player identifier. That identifier is not your name. Your Game Center display name stays with Apple.
+<br><br>
+## 5. Third parties
+<br>
+We do not sell your data. We do not give it to an ad network. These processors receive data only as needed to provide the service:
+<br><br>
+| Processor | What it receives | Where |<br>
+|---|---|---|<br>
+| Google Firebase Analytics | Events, install identifier, summary properties, device and app diagnostics | United States and other countries where Google processes data |<br>
+| Google Firebase Crashlytics | Crashes, errors, and diagnostics | United States and other countries where Google processes data |<br>
+| Google Cloud Firestore | Nothing is written about you. The App reads level and settings documents | United States and other countries where Google processes data |<br>
+| Apple | Game Center profile and scores, App Store payment, local-notification permission, the device operating system | As set by Apple’s countries and terms |<br>
+| RevenueCat | Purchase record and the player or anonymous app identifier | United States |
+<br><br>
+Firestore security rules should keep client writes closed so a modified app cannot change levels or settings. Your progress is not sent to that database.
+<br>
+When you share a daily chain, the text goes to the app you pick on the iOS share sheet. That app’s own terms apply.
+<br><br>
+## 6. International transfers
+<br>
+Provider servers may be outside Türkiye, in particular in the United States. Under KVKK article 9, the transfer is necessary to provide the service. Google’s, Apple’s, and RevenueCat’s own data-processing terms and standard contractual arrangements apply to that transfer. We do not send this data to build an advertising profile or to sell it to a recipient abroad.
+<br><br>
+## 7. Retention
+<br><br>
+- Game data on the device remains until you delete the App or clear the device data.<br>
+- Crashlytics records follow Google’s product period. Crash records in the product are generally kept for up to 90 days.<br>
+- User-level Analytics events are kept for the period selected in the Firebase console. The default is 2 months and it can be extended to 14 months. Aggregate reports may remain longer.<br>
+- RevenueCat keeps the transaction record for as long as needed to deliver the purchase, prevent a duplicate grant, and review fraud.<br>
+- Game Center scores and the display name remain under Apple’s Game Center terms. To remove them, use the Game Center tools on your Apple account.<br><br>
+
+When a period ends, the data is deleted, anonymized, or dropped from the processor’s system.
+<br><br>
+## 8. Notifications
+<br>
+Notifications are local. The App does not send remote push notifications. If you allow them, the device schedules reminders such as the daily hint, streak, come-back, and daily chain. You can withdraw permission in Settings. The in-app notification switch also cancels scheduled local notifications.
+<br><br>
+## 9. Purchases
+<br>
+Coin packs are consumable. The charge is billed to your Apple ID. We never receive your card details. The purchase is visible to RevenueCat as a product identifier and a transaction result, so coins are granted once.
+<br>
+Refunds follow Apple’s refund rules. You request a refund from Apple. Consumed virtual coins have no cash value and cannot be transferred or sent to another player.
+<br><br>
+## 10. Children
+<br>
+The App is not directed at children under 13 and is not designed for the Apple Kids category. We do not knowingly collect personal data from a child under 13. If you believe such data has reached us, write to muratcanappsupport@gmail.com. We will delete the record we can access.
+<br>
+Placing the App in the Kids category would require a separate review, because third-party analytics and crash tools are not appropriate there. This policy describes the current general-audience App.
+<br><br>
+## 11. Security
+<br>
+Local records sit in the operating system’s app container. Network calls use the encrypted connections of Firebase, Apple, and RevenueCat. No method is absolutely secure. Keeping your device locked and updated is your responsibility.
+<br><br>
+## 12. Your rights
+<br>
+Under KVKK article 11, you may ask the controller to:<br><br>
+
+- Learn whether your personal data is processed<br>
+- Request information if it has been processed<br>
+- Learn the purpose of processing and whether it is used for that purpose<br>
+- Know the third parties to whom it is transferred, in Türkiye or abroad<br>
+- Ask for correction if it is incomplete or wrong<br>
+- Ask for deletion or destruction under the conditions of KVKK article 7<br>
+- Ask that correction and deletion be notified to the third parties who received the data<br>
+- Object to a result against you produced solely by automated analysis<br>
+- Claim compensation if you suffer damage from unlawful processing<br><br>
+
+Send the request to muratcanappsupport@gmail.com with enough information to verify your identity. We reply within 30 days, depending on the nature of the request. If you believe the processing violates KVKK, you may complain to the Turkish Personal Data Protection Authority.<br><br>
+
+If you live in the European Economic Area, you also have, where they apply, the rights of access, rectification, erasure, restriction, objection, and portability. You may contact your supervisory authority. Because the App does not keep a user account, many requests end with deleting the data on the device and using Apple’s and Google’s own account tools. The Analytics install identifier is not matched to your name, so separating one person from the events is not always possible. If you send the install identifier you have, or an approximate date and device, we will try to match it.<br><br>
+
+Game Center data is requested from Apple. Payment records are requested from Apple. RevenueCat records are requested from us. Deleting the App deletes local progress. Unlinked events in Firebase drop when their retention period ends.<br><br>
+
+## 13. Changes
+<br>
+When we update this policy, we change the effective date. A material change will be announced in the App or through the link in the App Store description. Continuing to use the App after the change means you accept the current text. If a new process needs fresh consent, we will ask for it separately.
+<br><br>
+## 14. Contact
+<br>
+If you have any questions or suggestions, please feel free to get in touch at muratcanappsupport@gmail.com.<br><br>
+
+
+This privacy policy was published on 19 November 2026.
+
+</body>
+</html>
+
